@@ -1,0 +1,579 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+img{
+    height: 100%
+}
+
+.contgen {
+    width: 80%;
+    margin-left: 20%;
+    height: 100vh;
+}
+
+container {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.contcontactpar{
+    
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 80%;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 3;
+}
+
+.contcontact {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+
+.contDG, .contDI, .contI, .contestive {
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    display: none;
+    top: 0;
+    padding-right: 10%;
+    padding-top: 6vh;
+}
+
+.contimgproj{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+.conttxtproj{
+    position: relative;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    text-align: justify;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-left: 50.5%;
+    color: #000;
+    padding-left: 10%;
+    
+}
+
+
+#bienvenue{
+    width: 100%;
+    height: 100vh;
+    background-color: #7b29ff;
+    position: absolute;
+    z-index: 5;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.border {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    border: 1em solid #7b29ff;
+    transition-property: 1s;
+    z-index: 10;
+    top: 0;
+    flow-into: none;
+    pointer-events: none;
+}
+
+header {
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+    display: block;
+    z-index: 1;
+    text-align: right;
+    position: fixed;
+}
+
+.listenav {
+    position: relative;
+    font-size: 1.2em;
+    color: #bcbec0;
+    line-height: 2em;
+    padding-right: 10%;
+    font-weight: 600;
+    letter-spacing: normal;
+    transition-property: letter-spacing;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.listenav:hover {
+    letter-spacing: 5px;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.description {
+    text-align: left;
+    width: 30%;
+    min-width: 25%;
+    line-height: 1.3em;
+    z-index: 1;
+    font-size: 1.1em;
+    padding-top: 5%;
+    margin: 0;
+    position: relative;
+    order: 2;
+    justify-content: flex-end;
+    align-self: stretch;
+    font-weight: 600;
+    float: right;
+}
+
+.description a {
+    color: #000;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.description h2 {
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-size: 2em;
+    color: #bcbec0;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    margin-top: 10%;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #7b29ff;
+    text-align: right;
+    margin-right: 10%;
+    font-weight: 800;
+    line-height: 1em;
+    z-index: 1;
+}
+
+container h2 {
+    position: absolute;
+    width: 70%;
+    text-align: right;
+    margin-top: 6%;
+}
+
+.hexagon {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 13%;
+    transform-style: preserve-3d;
+    transform: translate(-100%, -100%);
+    z-index: 3;
+}
+
+.hexa1,
+.hexa2,
+.hexa3 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background-image: linear-gradient(to left, #f4314e, #7b29ff);
+    overflow: hidden;
+}
+
+.hexa1 {
+    top: 0;
+    left: 50%;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    background-image: linear-gradient(to right, #f4314e, #7b29ff);
+}
+
+.hexa1:hover {
+    top: -10%;
+}
+
+.hexa2 {
+    top: 77.5%;
+    left: 5.3%;
+    transform: rotate(15deg) skew(15deg, 15deg);
+    transition-property: left, top;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.hexa2:hover {
+    top: 83%;
+    left: -5%;
+}
+
+.hexa3 {
+    top: 77.5%;
+    left: 94.9%;
+    transform: rotate(-15deg) skew(-15deg, -15deg);
+    transition-property: left, top;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.hexa3:hover {
+    top: 83%;
+    left: 104%;
+}
+
+.mat1,
+.mat2,
+.mat3 {
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    color: #7b29ff;
+    font-size: 2em;
+    font-weight: 500;
+    top: 60vh;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    left: 55%;
+    border-style: solid;
+    border-width: 0.1em 0;
+    padding: 0.5em;
+}
+
+.hexa1:after,
+.hexa2:after,
+.hexa3:after {
+    background-image: url(img/noise.png);
+    content: '';
+    height: 200%;
+    opacity: 0.1;
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    animation: grain 7s steps(10) infinite;
+    top: -80%;
+    width: 200%;
+    background-blend-mode: multiply;
+}
+
+@keyframes grain {
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+    10% {
+        transform: translate(-5%, -10%)
+    }
+    20% {
+        transform: translate(-15%, 5%)
+    }
+    30% {
+        transform: translate (7%, -25%)
+    }
+    40% {
+        transform: translate(-5%, 25%)
+    }
+    50% {
+        transform: translate(-15%, 10%)
+    }
+    60% {
+        transform: translate(-15%, -10%)
+    }
+    70% {
+        transform: translate(-10%, 15%)
+    }
+    80% {
+        transform: translate(-20%, 35%)
+    }
+    90% {
+        transform: translate(-10%, 10%)
+    }
+}
+
+.hexa1:hover + .mat1 {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.hexa2:hover + .mat2 {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.hexa3:hover + .mat3 {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+header .logo {
+    width: 100%;
+    height: 15%;
+    background-image: url(img/logo_mrdp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15%;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #bcbec0;
+}
+
+#portrait {
+    min-width: 30%;
+    display: flex;
+    order: 1;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-self: center;
+    float: left;
+}
+
+#contsvg{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: fff;
+    z-index: 4;
+    margin-top: 10vh;
+}
+
+#s {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    z-index: 4;
+    
+  
+}
+
+.stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: dash 3s ;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.stroke2 {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: dash2 4s ;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+
+.l{
+    animation-delay: 1.7s;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 150;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fillwhite {
+
+    fill: #fff;
+    animation: spot 0.5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    
+}
+
+@keyframes spot{
+    
+    from{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+
+#conthexagri, #gridhexabas, #conthexagri2, #conthexabas2{
+    
+    width: 80%;
+    height: 50vh;
+    top: 20%;
+    margin-left: 20%;
+    position: absolute;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    transform: translateX(-4%) scale(1.1);
+    animation: opac 2s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    grid-column-gap: 1%;
+
+}
+
+@keyframes opac{
+    
+     from{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+#conthexagri svg, #conthexagri2 svg{
+    top: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.)
+}
+
+#gridhexabas, #gridhexabas2{
+    transform: translateX(-60%) translateY(-20%) scale(1.1);
+}
+
+.st0 {
+    clip-path: url(#SVGID_2_);
+    fill: #8A31FF;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.st0:hover{
+    opacity: 0;
+}
+
+
+#grad{
+    background-color: linear-gradient(to left, #f4314e, #7b29ff);
+}
+
+.txtsvg{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    transition-property: opacity;
+    opacity: 0;
+}
+
+.phrasebienvenue{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    top: 50vh;
+    padding-left: 58%;
+    padding-right: 0;
+    color: #fff;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-name: txtopac;
+}
+
+@keyframes txtopac{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
